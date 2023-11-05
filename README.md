@@ -1,10 +1,9 @@
+# AirBnB Clone: Phase # 4
 <img src="https://github.com/jarehec/AirBnB_clone_v3/blob/master/dev/HBTN-hbnb-Final.png" width="160" height=auto />
 
-# AirBnB Clone: Phase # 3
+## API with Swagger
 
-: API with Swagger
-
-## Description
+### Description
 
 Project attempts to clone the the AirBnB application and website, including the
 database, storage, RESTful API, Web Framework, and Front End.  Currently the
@@ -38,15 +37,12 @@ HBNB_MYSQL_HOST=localhost HBNB_MYSQL_DB=hbnb_test_db HBNB_TYPE_STORAGE=db \
 * __language:__ Python 3.4.3
 * __web server:__ nginx/1.4.6
 * __application server:__ Flask 0.12.2, Jinja2 2.9.6
-* __web server gateway:__ gunicorn (version 19.7.1)
 * __database:__ mysql Ver 14.14 Distrib 5.7.18
 * __documentation:__ Swagger (flasgger==0.6.6)
 * __style:__
   * __python:__ PEP 8 (v. 1.7.0)
   * __web static:__ [W3C Validator](https://validator.w3.org/)
   * __bash:__ ShellCheck 0.3.3
-
-<img src="https://github.com/jarehec/AirBnB_clone_v3/blob/master/dev/hbnb_step5.png" />
 
 ## Configuration Files
 
@@ -68,12 +64,6 @@ $ gunicorn --bind 127.0.0.1:8001 wsgi.wsgi:web_flask.app
 The `gunicorn` command starts an instance of a Flask Application.
 
 ---
-
-### Web Server Gateway Interface (WSGI)
-
-All integration with gunicorn occurs with `Upstart` `.conf` files.  The python
-code for the WSGI is listed in the `/wsgi/` directory.  These python files run
-the designated Flask Application.
 
 ## Setup
 
@@ -194,15 +184,6 @@ create: create [ARG] [PARAM 1] [PARAM 2] ...
                  City.create(name="Chicago")
 ```
 
-* Tests in the CLI may also be executed with this syntax:
-
-  * **destroy:** `<class name>.destroy(<id>)`
-
-  * **update:** `<class name>.update(<id>, <attribute name>, <attribute value>)`
-
-  * **update with dictionary:** `<class name>.update(<id>,
-    <dictionary representation>)`
-
 ---
 
 ### Continuous Integration Tests
@@ -210,16 +191,7 @@ create: create [ARG] [PARAM 1] [PARAM 2] ...
 Uses [Travis-CI](https://travis-ci.org/) to run all tests on all commits to the
 github repo
 
-## Authors :black_nib:
+## Authors :
 
-* __MJ Johnson__ - <[@mj31508](https://github.com/mj31508)>
-* __David John Coleman II__ - <[davidjohncoleman.com](http://www.davidjohncoleman.com/)> | <[@djohncoleman](https://twitter.com/djohncoleman)>
-* __Kimberly Wong__ - <[kjowong](https://github.com/kjowong)> | <[@kjowong](https://twitter.com/kjowong)> | <[kjowong@gmail.com](kjowong@gmail.com)>
-* __Carrie Ybay__ - <[hicarrie](https://github.com/hicarrie)> | <[@hicarrie_](https://twitter.com/hicarrie_)>
-* __Jared Heck__ - <[jarehec](https://github.com/jarehec)> | <[@jarehec](https://twitter.com/jarehec)>
-* __Brennan D Baraban__ - <[bdbaraban](https://github.com/bdbaraban)> | <[@bdov_](https://twitter.com/bdov_)>
-* __Derrick Gee__ - <[kai-dg](https://github.com/kai-dg)> | <[@the_haru_kai](https://twitter.com/the_haru_kai)>
-
-## License
-
-MIT License
+* Oussama El aouzari - <[gtpoint](https://github.com/gtpoint)>
+* Bamansour Abdennebi - <[bamansour1978](https://github.com/bamansour1978)>
